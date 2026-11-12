@@ -1,0 +1,624 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Flex Friday Team BigC — Consultoria para TAF</title>
+<meta name="description" content="Flex Friday Team BigC: compre a consultoria online para TAF na melhor condição do ano e comece a treinar quando o seu concurso pedir. Ativação até 01/06/2027.">
+<meta property="og:title" content="Flex Friday Team BigC — seu TAF no seu tempo">
+<meta property="og:description" content="Consultoria online personalizada para TAF com até 67% de desconto + Manual de Preparação Pré-TAF de bônus. Comece quando quiser, até 01/06/2027.">
+<meta property="og:image" content="img/og.jpg">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#0b0704">
+<link rel="icon" href="img/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<script>
+/* =====================================================================
+   CONFIGURAÇÃO — edite só este bloco para mudar preços, links e prazo
+   ===================================================================== */
+window.FLEX = {
+  // Data/hora em que a oferta encerra (horário de Brasília). null = esconde o contador.
+  prazo: null,               // exemplo: "2026-11-27T23:59:00-03:00"
+  textoPrazo: "Oferta por tempo limitado",
+  whatsapp: "5521998224229",
+  whatsappMsg: "Olá, Cesão! Vim pela página da Flex Friday e tenho uma dúvida.",
+  pix: { chave: "57.483.376/0001-11", nome: "CESAR E DANIELA CONSULTORIA ONLINE LTDA" },
+  planos: [
+    { id: "sargento", nome: "Sargento", meses: 3,  de: 750,  por: 497,
+      link3x: "https://www.asaas.com/000/c/quuujiwmheliu8xc", link10x: "https://www.asaas.com/000/c/mmavsuqrvewgkb0t" },
+    { id: "major",    nome: "Major",    meses: 6,  de: 1500, por: 697, destaque: true,
+      link3x: "https://www.asaas.com/000/c/cu9lsbqdl9u4zuvy", link10x: "https://www.asaas.com/000/c/qw37h8d9ts8yq5m4" },
+    { id: "general",  nome: "General",  meses: 12, de: 3000, por: 997,
+      link3x: "https://www.asaas.com/000/c/xyvh7tj8qewinfpz", link10x: "https://www.asaas.com/000/c/dgqa8z8ox8opy1my" }
+  ]
+};
+</script>
+<style>
+:root{
+  --bg:#0b0704; --bg2:#140c05; --card:#1b1108; --line:#3a2512;
+  --orange:#ff8a1f; --gold:#ffc93c; --text:#f6efe7; --muted:#c9b8a6; --dim:#8f7b68;
+  --ok:#3ddc84; --radius:18px; --w:1120px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--text);font-family:Montserrat,system-ui,sans-serif;font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{max-width:100%;height:auto;display:block}
+a{color:inherit}
+.wrap{width:100%;max-width:var(--w);margin:0 auto;padding:0 20px}
+section{padding:88px 0;position:relative}
+.eyebrow{font-family:"Bebas Neue",sans-serif;letter-spacing:.18em;color:var(--orange);font-size:20px}
+h1,h2,h3{font-family:Anton,Impact,sans-serif;font-weight:400;text-transform:uppercase;line-height:1.05;letter-spacing:.01em}
+h2{font-size:clamp(34px,5.4vw,56px);margin:.2em 0 .5em}
+h2 em,h1 em{font-style:normal;color:var(--orange)}
+h3{font-size:26px;margin-bottom:.35em}
+p+p{margin-top:1em}
+.lead{font-size:clamp(17px,2.1vw,20px);color:var(--muted);max-width:760px}
+b,strong{color:#fff;font-weight:700}
+.center{text-align:center}.center .lead{margin-left:auto;margin-right:auto}
+
+/* botões */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;font-family:Montserrat;font-weight:800;text-transform:uppercase;letter-spacing:.04em;text-decoration:none;border:0;cursor:pointer;border-radius:999px;padding:18px 34px;font-size:17px;transition:transform .15s,box-shadow .15s,background .15s}
+.btn-main{background:linear-gradient(180deg,#ffa23d,#ff7a00);color:#1a0d00;box-shadow:0 10px 30px -8px rgba(255,138,31,.7),inset 0 -3px 0 rgba(0,0,0,.18)}
+.btn-main:hover{transform:translateY(-2px);box-shadow:0 16px 40px -8px rgba(255,138,31,.85)}
+.btn-ghost{background:transparent;color:var(--text);border:2px solid var(--line)}
+.btn-ghost:hover{border-color:var(--orange);color:var(--orange)}
+.btn:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+
+/* faixa topo */
+.ribbon{position:sticky;top:0;z-index:50;background:linear-gradient(90deg,#ff7a00,#ffb03b);color:#1a0d00;font-weight:700;font-size:14px;text-align:center;padding:9px 14px;display:flex;gap:14px;justify-content:center;align-items:center;flex-wrap:wrap}
+.ribbon .cd{font-family:"Bebas Neue";font-size:20px;letter-spacing:.06em;background:#1a0d00;color:var(--gold);padding:1px 12px;border-radius:8px}
+.ribbon a{font-weight:800}
+
+/* hero */
+.hero{min-height:92vh;display:flex;align-items:center;padding:60px 0 80px;background:
+  linear-gradient(180deg,rgba(11,7,4,.35) 0%,rgba(11,7,4,.55) 45%,var(--bg) 100%),
+  url(img/hero-tall.webp) center 30%/cover no-repeat}
+.hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center}
+.ff-logo{mix-blend-mode:screen;width:min(560px,100%);margin:-10px 0 8px -12px}
+.hero h1{font-size:clamp(30px,4.4vw,50px);margin:6px 0 18px}
+.hero .lead{color:#eadccd}
+.hero-cta{margin-top:30px;display:flex;flex-wrap:wrap;gap:14px;align-items:center}
+.chips{display:flex;flex-wrap:wrap;gap:10px;margin-top:26px}
+.chip{border:1px solid rgba(255,201,60,.35);background:rgba(20,12,5,.65);backdrop-filter:blur(6px);border-radius:999px;padding:7px 15px;font-size:14px;font-weight:600;color:#ffe3b0}
+.hero-book{justify-self:center;position:relative;max-width:340px}
+.hero-book img{border-radius:10px;box-shadow:0 30px 80px -20px #000,0 0 0 1px rgba(255,255,255,.06);transform:rotate(3deg)}
+.hero-book .tag{position:absolute;left:-18px;bottom:28px;background:var(--gold);color:#1a0d00;font-weight:800;font-size:14px;padding:10px 16px;border-radius:12px;transform:rotate(-4deg);box-shadow:0 10px 30px -10px #000;line-height:1.25}
+
+/* problema */
+.problem{background:var(--bg)}
+.split{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
+.split.rev>:first-child{order:2}
+.photo{border-radius:var(--radius);overflow:hidden;box-shadow:0 30px 60px -30px #000;border:1px solid var(--line)}
+.quote{margin-top:22px;border-left:4px solid var(--orange);padding:6px 0 6px 18px;font-family:"Bebas Neue";font-size:28px;letter-spacing:.03em;color:var(--gold);line-height:1.15}
+
+/* flex */
+.flex{background:radial-gradient(1000px 500px at 50% 0%,rgba(255,138,31,.13),transparent 70%),var(--bg2)}
+.cards2{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:40px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:30px}
+.card .ico{font-size:34px;line-height:1;margin-bottom:14px}
+.card p{color:var(--muted)}
+.card.hl{border-color:rgba(255,138,31,.6);box-shadow:0 0 0 1px rgba(255,138,31,.25) inset}
+.deadline{margin:34px auto 0;max-width:760px;text-align:center;background:linear-gradient(90deg,transparent,rgba(255,201,60,.12),transparent);border-top:1px solid rgba(255,201,60,.3);border-bottom:1px solid rgba(255,201,60,.3);padding:18px 10px;font-weight:600}
+.deadline b{color:var(--gold)}
+.mini{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:22px}
+.mini div{padding:20px 24px;border-radius:14px;background:rgba(255,255,255,.03);border:1px dashed var(--line);color:var(--muted)}
+.mini b{display:block;margin-bottom:4px;font-size:18px}
+
+/* manual */
+.manual{background:var(--bg)}
+.pages{position:relative;height:500px}
+.pages img{position:absolute;width:56%;border-radius:10px;box-shadow:0 30px 60px -20px #000;border:1px solid rgba(255,255,255,.06)}
+.pages .p1{left:22%;top:0;z-index:3}
+.pages .p2{left:0;top:60px;transform:rotate(-7deg);z-index:1;filter:brightness(.75)}
+.pages .p3{right:0;top:60px;transform:rotate(7deg);z-index:2;filter:brightness(.75)}
+.value{display:inline-flex;align-items:baseline;gap:12px;margin-top:20px;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:12px 18px}
+.value s{color:var(--dim)}
+.value b{color:var(--gold);font-family:"Bebas Neue";font-size:30px;letter-spacing:.04em}
+.list{list-style:none;margin-top:18px}
+.list li{position:relative;padding-left:32px;margin:10px 0;color:var(--muted)}
+.list li:before{content:"";position:absolute;left:0;top:5px;width:20px;height:20px;border-radius:50%;background:var(--orange) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Cpath d='M5 10.5l3 3 7-7' fill='none' stroke='%231a0d00' stroke-width='2.6' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center/14px no-repeat}
+.list li b{color:#fff}
+
+/* passos */
+.steps-sec{background:var(--bg2)}
+.steps{counter-reset:s;display:grid;grid-template-columns:repeat(5,1fr);gap:16px;margin-top:44px}
+.step{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:24px 20px;position:relative}
+.step:before{counter-increment:s;content:counter(s);font-family:Anton;font-size:46px;line-height:1;color:var(--orange);display:block;margin-bottom:10px}
+.step h3{font-size:20px}
+.step p{font-size:15px;color:var(--muted)}
+
+/* entregáveis */
+.get{background:var(--bg)}
+.phones{display:flex;gap:18px;justify-content:center}
+.phones img{width:48%;border-radius:16px;border:1px solid var(--line);box-shadow:0 30px 60px -25px #000}
+.phones img:last-child{margin-top:60px}
+
+/* planos */
+.plans{background:radial-gradient(900px 600px at 50% 10%,rgba(255,138,31,.16),transparent 70%),var(--bg2)}
+.pgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:46px;align-items:stretch}
+.plan{background:var(--card);border:1px solid var(--line);border-radius:22px;padding:32px 26px 28px;display:flex;flex-direction:column;position:relative}
+.plan.top{border:2px solid var(--orange);background:linear-gradient(180deg,#2a1608,var(--card) 40%);transform:translateY(-10px);box-shadow:0 30px 70px -30px rgba(255,138,31,.55)}
+.plan .badge{position:absolute;top:-15px;left:50%;transform:translateX(-50%);background:var(--orange);color:#1a0d00;font-weight:800;font-size:13px;letter-spacing:.06em;text-transform:uppercase;padding:6px 16px;border-radius:999px;white-space:nowrap}
+.plan .pname{font-family:Anton;font-size:34px;text-transform:uppercase;letter-spacing:.02em}
+.plan .dur{color:var(--orange);font-weight:700;margin-bottom:14px}
+.plan .off{display:inline-block;align-self:flex-start;background:rgba(61,220,132,.12);color:var(--ok);font-weight:800;font-size:13px;padding:4px 10px;border-radius:8px;margin-bottom:10px}
+.plan .from{color:var(--dim);font-size:15px}
+.plan .from s{color:var(--dim)}
+.plan .price{font-family:Anton;font-size:58px;line-height:1;margin:4px 0 2px;color:#fff}
+.plan .price small{font-size:24px;vertical-align:top;margin-right:4px;color:var(--muted)}
+.plan .inst{color:var(--gold);font-weight:700;font-size:15px}
+.plan .for{color:var(--muted);font-size:15px;margin:18px 0 18px;padding-top:18px;border-top:1px solid var(--line);flex:1}
+.plan .btn{width:100%;padding:16px 18px;font-size:16px}
+.plan .alt{display:block;text-align:center;margin-top:12px;font-size:14px;color:var(--muted)}
+.plan .alt:hover{color:var(--orange)}
+.bonus{font-size:14px;color:#ffe3b0;margin-bottom:6px}
+.payinfo{margin:34px auto 0;max-width:820px;display:flex;flex-wrap:wrap;gap:14px 26px;justify-content:center;color:var(--muted);font-size:15px}
+.pix{margin:22px auto 0;max-width:620px;background:var(--card);border:1px dashed var(--line);border-radius:14px;padding:16px 20px;display:flex;gap:14px;align-items:center;justify-content:space-between;flex-wrap:wrap;font-size:15px}
+.pix code{font-family:inherit;font-weight:800;color:#fff;font-size:17px}
+.pix button{background:transparent;border:1px solid var(--orange);color:var(--orange);font-weight:700;border-radius:999px;padding:8px 16px;cursor:pointer;font-family:inherit}
+.terms{margin-top:22px;text-align:center;font-size:14px;color:var(--dim)}
+.terms a{color:var(--muted)}
+
+/* garantia */
+.guarantee{background:var(--bg)}
+.gbox{display:grid;grid-template-columns:auto 1fr;gap:36px;align-items:center;background:linear-gradient(135deg,#21140a,#120a04);border:1px solid var(--line);border-radius:26px;padding:44px}
+.seal{width:170px;height:170px;border-radius:50%;display:grid;place-items:center;text-align:center;background:radial-gradient(circle,#ffb347,#ff7a00);color:#1a0d00;box-shadow:0 0 0 8px rgba(255,138,31,.18),0 0 0 16px rgba(255,138,31,.08)}
+.seal b{display:block;font-family:Anton;font-size:64px;line-height:.9;color:#1a0d00}
+.seal span{font-family:"Bebas Neue";font-size:20px;letter-spacing:.08em}
+
+/* sobre */
+.about{background:var(--bg2);overflow:hidden}
+.about .photo{border:0;background:#222;max-width:440px}
+.canal{margin-top:26px;border-radius:14px;overflow:hidden;border:1px solid var(--line)}
+.motto{margin-top:20px;font-family:"Bebas Neue";letter-spacing:.12em;font-size:22px;color:var(--gold)}
+
+/* depois */
+.after{background:var(--bg)}
+.timeline{max-width:820px;margin:40px auto 0;position:relative}
+.timeline:before{content:"";position:absolute;left:23px;top:8px;bottom:8px;width:2px;background:linear-gradient(var(--orange),transparent)}
+.tl{display:grid;grid-template-columns:48px 1fr;gap:18px;margin-bottom:22px}
+.tl .n{width:48px;height:48px;border-radius:50%;background:var(--card);border:2px solid var(--orange);display:grid;place-items:center;font-family:Anton;font-size:20px;color:var(--orange);position:relative}
+.tl p{color:var(--muted);padding-top:10px}
+.tl .fork{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:12px}
+.tl .fork div{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px;font-size:15px;color:var(--muted)}
+.tl .fork b{display:block;color:var(--orange);margin-bottom:4px}
+
+/* faq */
+.faq{background:var(--bg2)}
+.faq-list{max-width:860px;margin:40px auto 0}
+details.q{border-bottom:1px solid var(--line)}
+details.q summary{list-style:none;cursor:pointer;padding:22px 44px 22px 0;font-weight:700;font-size:18px;position:relative}
+details.q summary::-webkit-details-marker{display:none}
+details.q summary:after{content:"+";position:absolute;right:6px;top:14px;font-size:30px;color:var(--orange);font-weight:400;transition:transform .2s}
+details.q[open] summary:after{transform:rotate(45deg)}
+details.q div{padding:0 0 22px;color:var(--muted)}
+
+/* final */
+.final{text-align:center;background:linear-gradient(180deg,rgba(11,7,4,.7),rgba(11,7,4,.92)),url(img/bg-blur.webp) center/cover}
+.final .ff-logo{margin:0 auto 10px}
+
+/* regulamento */
+.rules{background:var(--bg);padding:60px 0}
+.rules details{max-width:860px;margin:0 auto;background:var(--card);border:1px solid var(--line);border-radius:16px}
+.rules summary{cursor:pointer;padding:20px 24px;font-weight:800;text-transform:uppercase;letter-spacing:.04em;list-style:none}
+.rules summary::-webkit-details-marker{display:none}
+.rules summary:after{content:" ▾";color:var(--orange)}
+.rules .doc{padding:0 26px 28px;font-size:14.5px;color:var(--muted);max-height:70vh;overflow:auto}
+.rules .doc h4{color:#fff;margin:20px 0 6px;font-size:15px;text-transform:uppercase;letter-spacing:.03em}
+.rules .doc p{margin:0 0 9px}
+
+footer{background:#070402;border-top:1px solid var(--line);padding:40px 0 110px;color:var(--dim);font-size:14px}
+footer .fgrid{display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap;align-items:center}
+footer img{width:130px;border-radius:8px}
+
+/* whatsapp flutuante */
+.wa{position:fixed;right:18px;bottom:18px;z-index:60;width:60px;height:60px;border-radius:50%;background:#25d366;display:grid;place-items:center;box-shadow:0 10px 30px -6px rgba(0,0,0,.6)}
+.wa svg{width:32px;height:32px}
+/* CTA fixo mobile */
+.mbar{display:none}
+
+.reveal{opacity:0;transform:translateY(24px);transition:opacity .7s ease,transform .7s ease}
+.reveal.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}}
+
+@media (max-width:960px){
+  .steps{grid-template-columns:1fr 1fr}
+  .pgrid{grid-template-columns:1fr;max-width:460px;margin-left:auto;margin-right:auto}
+  .plan.top{transform:none;order:-1}
+}
+@media (max-width:820px){
+  body{font-size:16px}
+  section{padding:64px 0}
+  .hero{min-height:auto;padding:36px 0 60px;background-position:center top}
+  .hero-grid,.split,.cards2,.mini{grid-template-columns:1fr}
+  .split.rev>:first-child{order:0}
+  .split{gap:34px}
+  .hero-book{max-width:240px}
+  .hero-book .tag{left:-30px;font-size:13px}
+  .ff-logo{margin:0 auto 4px;width:min(420px,100%)}
+  .hero-txt{text-align:center}
+  .hero-cta,.chips{justify-content:center}
+  .pages{height:380px;width:100%;max-width:420px;margin:0 auto}
+  .gbox{grid-template-columns:1fr;text-align:center;padding:32px 22px;justify-items:center}
+  .seal{width:140px;height:140px}.seal b{font-size:52px}
+  .about .photo{margin:0 auto;max-width:340px}
+  .tl .fork{grid-template-columns:1fr}
+  .wa{bottom:84px;width:54px;height:54px}
+  .mbar{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:55;padding:10px 14px calc(10px + env(safe-area-inset-bottom));background:rgba(11,7,4,.94);backdrop-filter:blur(8px);border-top:1px solid var(--line);transform:translateY(110%);transition:transform .3s}
+  .mbar.show{transform:none}
+  .mbar .btn{width:100%;padding:15px;font-size:15px}
+}
+@media (max-width:520px){
+  .wrap{padding:0 16px}
+  .steps{grid-template-columns:1fr}
+  .btn{padding:16px 24px;font-size:15px}
+  .hero-cta .btn{width:100%}
+  .ribbon{font-size:12.5px;gap:8px}
+  .plan .price{font-size:52px}
+}
+</style>
+</head>
+<body>
+
+<div class="ribbon" id="ribbon"><span>🔥 FLEX FRIDAY TEAM BIGC · <span id="ribbonTxt"></span></span><span class="cd" id="cd" hidden></span><a href="#planos">Ver planos ↓</a></div>
+
+<!-- HERO -->
+<header class="hero">
+  <div class="wrap hero-grid">
+    <div class="hero-txt">
+      <img class="ff-logo" src="img/ff-logo.webp" alt="Flex Friday" width="1100" height="520">
+      <div class="eyebrow">A Black Friday do Team BigC</div>
+      <h1>Garanta hoje a melhor condição do ano. <em>Comece a treinar pro TAF quando o seu concurso pedir.</em></h1>
+      <p class="lead">Consultoria online <b>100% personalizada</b> para o Teste de Aptidão Física, com o Cesão. Você escolhe se começa agora ou depois, até <b>1º de junho de 2027</b>.</p>
+      <div class="hero-cta">
+        <a href="#planos" class="btn btn-main">Quero garantir minha vaga</a>
+      </div>
+      <div class="chips">
+        <span class="chip">Até 67% de desconto</span>
+        <span class="chip">Manual Pré-TAF de bônus</span>
+        <span class="chip">7 dias de garantia</span>
+      </div>
+    </div>
+    <div class="hero-book">
+      <img src="img/manual-capa.webp" alt="Capa do Manual de Preparação Pré-TAF" width="700" height="1094">
+      <div class="tag">BÔNUS<br>Manual Pré-TAF</div>
+    </div>
+  </div>
+</header>
+
+<!-- PROBLEMA -->
+<section class="problem">
+  <div class="wrap split">
+    <div class="reveal">
+      <div class="eyebrow">O erro que mais reprova</div>
+      <h2>“Quando o edital sair, <em>eu começo a treinar”</em></h2>
+      <p>Uma das maiores dúvidas de quem quer uma carreira na segurança pública é <b>quando começar a treinar pro TAF</b>. Muitos deixam pra depois, não conseguem conciliar com o estudo ou o trabalho, ou subestimam a preparação física.</p>
+      <p>E esse é um dos principais motivos pelos quais <b>a lista de reprovados no TAF continua sempre grande</b>. Gente que dominou o edital e foi eliminada porque não completou a corrida ou as barras.</p>
+      <div class="quote">Seu TAF começa antes do edital.</div>
+    </div>
+    <div class="photo reveal"><img src="img/reprovado.webp" alt="Candidato amparado após não completar o teste de corrida" width="1200" height="670" loading="lazy"></div>
+  </div>
+</section>
+
+<!-- FLEX -->
+<section class="flex">
+  <div class="wrap center">
+    <div class="eyebrow">Por que “Flex”?</div>
+    <h2>A preparação fica <em>nas suas mãos</em></h2>
+    <p class="lead">Você contrata hoje, na melhor condição do ano, e escolhe quando o seu plano começa a contar.</p>
+    <div class="cards2" style="text-align:left">
+      <div class="card hl reveal"><div class="ico">⚡</div><h3>Começar agora</h3><p>Você já entra na consultoria online personalizada e fala direto comigo desde o primeiro dia para montarmos a estratégia rumo à aprovação.</p></div>
+      <div class="card reveal"><div class="ico">⏳</div><h3>Começar depois</h3><p>Você ativa o plano na data que fizer mais sentido para o cronograma do seu concurso. Enquanto isso, faz os treinos de base com o <b>Manual de Preparação Pré-TAF</b>.</p></div>
+    </div>
+    <div class="mini" style="text-align:left">
+      <div class="reveal"><b>🎯 Seu TAF já tem data?</b>Faça a contagem regressiva e ative o programa de treinos no momento certo.</div>
+      <div class="reveal"><b>🎯 Ainda não tem data?</b>Comece pelos treinos de base, que constroem a estrutura física e preparam o corpo para o treino específico.</div>
+    </div>
+    <p class="deadline reveal">Prazo limite para ativar o plano: <b>1º de junho de 2027</b>. Se você não ativar até lá, o plano é ativado automaticamente nessa data.</p>
+  </div>
+</section>
+
+<!-- MANUAL -->
+<section class="manual">
+  <div class="wrap split rev">
+    <div class="reveal">
+      <div class="eyebrow">Bônus para todos os planos</div>
+      <h2>Manual de Preparação <em>Pré-TAF</em></h2>
+      <p>Um guia completo para começar os treinos de base, construir os fundamentos e desenvolver as capacidades de que você vai precisar quando chegar a hora do <b>treino 100% específico para as provas do seu edital</b>.</p>
+      <ul class="list">
+        <li><b>Treino de base</b> explicado do zero: por que ele vem antes do treino específico</li>
+        <li>Protocolo de <b>testes iniciais</b> e tabela de índices para acompanhar a evolução</li>
+        <li>Mobilidade, força, corrida e rotina para encaixar o treino junto com o estudo e o trabalho</li>
+        <li>Registro semanal para você acompanhar o seu progresso</li>
+      </ul>
+      <div class="value"><s>R$ 197,00</s><b>GRÁTIS NA FLEX FRIDAY</b></div>
+    </div>
+    <div class="pages reveal">
+      <img class="p2" src="img/manual-p3.webp" alt="" loading="lazy" width="500" height="781">
+      <img class="p3" src="img/manual-p10.webp" alt="" loading="lazy" width="500" height="781">
+      <img class="p1" src="img/manual-capa.webp" alt="Páginas do Manual de Preparação Pré-TAF" loading="lazy" width="700" height="1094">
+    </div>
+  </div>
+</section>
+
+<!-- COMO FUNCIONA -->
+<section class="steps-sec">
+  <div class="wrap">
+    <div class="center">
+      <div class="eyebrow">Consultoria online, passo a passo</div>
+      <h2>Como funciona <em>na prática</em></h2>
+    </div>
+    <div class="steps">
+      <div class="step reveal"><h3>Formulário completo</h3><p>Você conta sobre sua rotina, seus treinos de hoje, seu TAF e seu condicionamento atual.</p></div>
+      <div class="step reveal"><h3>Análise individual</h3><p>Eu analiso tudo e, se precisar, te chamo para alinhar. Considero dias, tempo, local de treino e acessórios disponíveis.</p></div>
+      <div class="step reveal"><h3>Plano no WhatsApp</h3><p>Em até 7 dias úteis: divisão de treino, exercícios, séries, repetições, intervalos e vídeos demonstrativos.</p></div>
+      <div class="step reveal"><h3>Suporte direto</h3><p>Dúvidas e ajustes pelo WhatsApp, a qualquer hora. Sou eu mesmo que respondo, em até 24h úteis.</p></div>
+      <div class="step reveal"><h3>Análise de vídeos</h3><p>Você grava os exercícios, eu analiso e aponto as correções. Quantos vídeos quiser.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- O QUE RECEBE -->
+<section class="get">
+  <div class="wrap split">
+    <div class="reveal">
+      <div class="eyebrow">Tudo incluso em qualquer plano</div>
+      <h2>O que você <em>recebe</em></h2>
+      <ul class="list">
+        <li><b>Manual de Preparação Pré-TAF</b> para os treinos de base</li>
+        <li><b>Plano individualizado</b> com divisão de treinos, exercícios, séries, repetições, intervalos, instruções e material de apoio</li>
+        <li><b>Suporte VIP no WhatsApp</b>, 24 horas por dia, 7 dias por semana</li>
+        <li><b>Análise de vídeos</b>, correção de exercícios e tira-dúvidas</li>
+        <li><b>Ajustes nos treinos</b> sempre que for necessário</li>
+        <li><b>Calendário de simulados</b> e reavaliações periódicas para o treino acompanhar a sua evolução</li>
+      </ul>
+      <div class="hero-cta"><a href="#planos" class="btn btn-main">Ver os planos</a></div>
+    </div>
+    <div class="phones reveal">
+      <img src="img/app-barra.webp" alt="Aluno treinando barra com o plano no celular" loading="lazy" width="700" height="1254">
+      <img src="img/app-corrida.webp" alt="Aluno treinando corrida com o plano no celular" loading="lazy" width="700" height="1254">
+    </div>
+  </div>
+</section>
+
+<!-- PLANOS -->
+<section class="plans" id="planos">
+  <div class="wrap">
+    <div class="center">
+      <div class="eyebrow">Condição Flex Friday</div>
+      <h2>Escolha o seu <em>plano</em></h2>
+      <p class="lead">Todos os planos incluem a consultoria completa e o Manual de Preparação Pré-TAF. O tempo do plano só começa a contar quando você ativar.</p>
+    </div>
+    <div class="pgrid" id="pgrid"></div>
+    <div class="payinfo"><span>💠 Pix</span><span>💳 Cartão em até 3x sem juros</span><span>💳 ou em até 10x</span><span>🔒 Pagamento seguro via Asaas</span></div>
+    <div class="pix"><span>Prefere Pix direto? Chave CNPJ: <code id="pixKey"></code><br><small id="pixName" style="color:var(--dim)"></small></span><button type="button" id="copyPix">Copiar chave</button></div>
+    <p class="terms">Depois de pagar, mande o comprovante no <a href="#" class="walink">WhatsApp</a> para receber os próximos passos.<br>Ao comprar, você concorda com o <a href="#regulamento">Regulamento Oficial da Flex Friday</a>.</p>
+  </div>
+</section>
+
+<!-- GARANTIA -->
+<section class="guarantee">
+  <div class="wrap">
+    <div class="gbox reveal">
+      <div class="seal"><div><b>7</b><span>dias de garantia</span></div></div>
+      <div>
+        <h2 style="margin-top:0">Risco <em>zero</em> pra você</h2>
+        <p class="lead">Você tem 7 dias, a partir da confirmação da compra, para desistir por qualquer motivo. É só avisar e a gente devolve <b>100% do valor</b>, como garante o Código de Defesa do Consumidor.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SOBRE -->
+<section class="about">
+  <div class="wrap split">
+    <div class="photo reveal"><img src="img/cesao.webp" alt="Cesão, criador do Método TAF e líder do Team BigC" loading="lazy" width="900" height="1495"></div>
+    <div class="reveal">
+      <div class="eyebrow">Quem vai te treinar</div>
+      <h2>Prazer, <em>Cesão</em></h2>
+      <p>Sou o líder do Team BigC e criador do <b>Método TAF: Treine Até Fazer</b>. Meu trabalho é um só: colocar candidatos em condição de passar no Teste de Aptidão Física.</p>
+      <p>Na consultoria, quem monta o seu treino, analisa os seus vídeos e responde as suas dúvidas sou eu mesmo. Nada de robô, nada de planilha genérica.</p>
+      <div class="canal"><img src="img/canal.webp" alt="Cesão BigC: o maior canal sobre TAF do Brasil" loading="lazy" width="1400" height="510"></div>
+      <div class="motto">O seu TAF, o meu método, a nossa missão.</div>
+    </div>
+  </div>
+</section>
+
+<!-- DEPOIS DA COMPRA -->
+<section class="after">
+  <div class="wrap">
+    <div class="center">
+      <div class="eyebrow">Depois da compra</div>
+      <h2>O que acontece <em>quando você paga</em></h2>
+    </div>
+    <div class="timeline">
+      <div class="tl reveal"><div class="n">1</div><p>Você paga e me manda o comprovante no WhatsApp.</p></div>
+      <div class="tl reveal"><div class="n">2</div><div><p>Você decide quando começar:</p>
+        <div class="fork"><div><b>Começar agora</b>Você preenche o formulário inicial e eu já começo a montar o seu plano.</div><div><b>Começar depois</b>Você recebe o Manual de Preparação Pré-TAF e ativa o plano quando quiser, até 01/06/2027.</div></div></div></div>
+      <div class="tl reveal"><div class="n">3</div><p>Na hora de ativar, você preenche o formulário inicial (de preferência depois de um simulado de todas as provas do seu TAF).</p></div>
+      <div class="tl reveal"><div class="n">4</div><p>Eu monto o seu plano de forma individual e ele chega no seu WhatsApp em até 7 dias úteis.</p></div>
+      <div class="tl reveal"><div class="n">5</div><p>O acompanhamento segue pelo WhatsApp: dúvidas, correção de exercícios, vídeos, ajustes e feedbacks para você evoluir sempre.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq">
+  <div class="wrap">
+    <div class="center">
+      <div class="eyebrow">Dúvidas frequentes</div>
+      <h2>Perguntas <em>e respostas</em></h2>
+    </div>
+    <div class="faq-list">
+      <details class="q"><summary>Meu TAF ainda não tem data. Vale a pena comprar agora?</summary><div>Vale. Você garante o preço da Flex Friday hoje e só ativa o plano quando fizer sentido. Enquanto isso, faz os treinos de base com o Manual de Preparação Pré-TAF, que prepara o corpo para o treino específico.</div></details>
+      <details class="q"><summary>Até quando posso ativar o plano?</summary><div>Até 1º de junho de 2027. Se você não ativar até essa data, o plano é ativado automaticamente nela e o prazo começa a contar.</div></details>
+      <details class="q"><summary>Quando o tempo do plano começa a contar?</summary><div>A partir da ativação. Ao ativar, você preenche o formulário inicial e recebe o seu plano no WhatsApp em até 7 dias úteis.</div></details>
+      <details class="q"><summary>Qual plano eu escolho?</summary><div><b>Sargento (3 meses):</b> para quem já tem o TAF próximo e já treina.<br><b>Major (6 meses):</b> para quem já tem algum treino na rotina, mas ainda é iniciante no mundo do TAF.<br><b>General (12 meses):</b> para quem quer uma preparação de longo prazo, está começando ou saindo do sedentarismo.<br>Se ficar em dúvida, me chama no WhatsApp.</div></details>
+      <details class="q"><summary>Treino em casa / na academia / na rua. Funciona pra mim?</summary><div>Funciona. O plano é montado considerando os seus dias disponíveis, o tempo de treino, os locais e os acessórios que você tem.</div></details>
+      <details class="q"><summary>E se o meu concurso for cancelado?</summary><div>Se o concurso for cancelado em definitivo ou suspenso por força maior antes de você ativar a consultoria, você pode transferir o crédito para outro concurso ou pedir o cancelamento com devolução, descontados 10% de taxa administrativa. Os detalhes estão no regulamento.</div></details>
+      <details class="q"><summary>E se eu for reprovado numa etapa antes do TAF?</summary><div>Você pode pedir o trancamento do plano por até 6 meses e usar o saldo na preparação para o TAF de outro concurso.</div></details>
+      <details class="q"><summary>Quais são as formas de pagamento?</summary><div>Pix ou cartão de crédito em até 3x sem juros ou em até 10x. Depois de pagar, mande o comprovante no WhatsApp.</div></details>
+      <details class="q"><summary>E se eu me arrepender?</summary><div>Você tem 7 dias a partir da confirmação da compra para desistir e receber 100% do valor de volta. Depois desse prazo, valem as regras de cancelamento do regulamento.</div></details>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL -->
+<section class="final">
+  <div class="wrap">
+    <img class="ff-logo" src="img/ff-logo.webp" alt="Flex Friday" loading="lazy" width="1100" height="520" style="width:min(420px,90%)">
+    <h2>Seu TAF, <em>no seu tempo</em></h2>
+    <p class="lead" style="margin:0 auto 30px">A melhor condição do ano para treinar com o Team BigC. Garanta agora e comece quando o seu concurso pedir.</p>
+    <a href="#planos" class="btn btn-main">Garantir minha vaga</a>
+  </div>
+</section>
+
+<!-- REGULAMENTO -->
+<section class="rules" id="regulamento">
+  <div class="wrap">
+    <details>
+      <summary>Regulamento Oficial da Flex Friday</summary>
+      <div class="doc">
+<h4>REGULAMENTO OFICIAL – CAMPANHA FLEX FRIDAY</h4>
+<h4>MODALIDADE CRONOGRAMA FLEXÍVEL (CONSULTORIA ESPORTIVA ONLINE PARA TESTE DE APTIDÃO FÍSICA)</h4>
+<p>O presente regulamento estabelece as regras, condições e diretrizes da campanha especial Flex Friday, promovida por TEAM BIGC CONSULTORIA ONLINE. Ao adquirir o plano de consultoria esportiva online nesta modalidade, o aluno adere integral e irrestritamente a todos os termos aqui dispostos.</p>
+<h4>1. DO OBJETO E DA ENTREGA</h4>
+<p><b>1.1. Escopo do Serviço:</b> A campanha concede o direito de contratação de consultoria esportiva online personalizada e individualizada, focada na preparação física para o Teste de Aptidão Física (TAF), por meio do envio de planilhas de treino digitais e suporte técnico direto, de acordo com os seguintes planos:</p>
+<p><b>Plano Trimestral (3 meses):</b> R$ 497,00 (quatrocentos e noventa e sete reais);</p>
+<p><b>Plano Semestral (6 meses):</b> R$ 697,00 (seiscentos e noventa e sete reais); e</p>
+<p><b>Plano Anual (12 meses):</b> R$ 997,00 (novecentos e noventa e sete reais).</p>
+<p><b>1.2. O Benefício Flex:</b> O grande diferencial da modalidade Flex Friday é a liberdade de cronograma, permitindo que o ALUNO adquira a consultoria agora e escolha o melhor momento para iniciar os treinos, alinhando a preparação ao tempo do seu edital.</p>
+<p><b>1.3. Prazo para Entrega do Serviço Contratado:</b> A partir do momento que o ALUNO manifestou seu interesse de iniciar o programa de treinamento, a CONTRATADA tem o prazo de 7 (sete) dias úteis para enviar o material, o que será feito através do aplicativo de mensagens instantâneas WhatsApp fornecido pelo aluno quando do preenchimento do formulário inicial (anamnese).</p>
+<p><b>1.4 Preenchimento do Formulário Inicial (Anamnese):</b> Manifestado o interesse de iniciar o plano contratado, a CONTRATADA enviará para o ALUNO um link com o Formulário Inicial (Anamnese), o qual deverá ser preenchido detalhadamente pelo ALUNO com informações de cunho pessoal. Recomenda-se fortemente que o ALUNO, antes de preencher o formulário supracitado, realize um simulado inicial de todas as provas do seu TAF, a fim de aferir qual sua condição física atual, as quais serão utilizadas para a personalização do serviço prestado.</p>
+<p><b>1.5 Suporte ao Serviço Contratado:</b> É dever da CONTRATADA prestar todo o suporte necessário para que o ALUNO desenvolva o seu treinamento nas melhores condições possíveis, tendo essa o prazo de 24 (vinte e quatro) horas úteis para responder qualquer dúvida do ALUNO que seja enviada pelo canal de comunicação (app de mensagens instantâneas WhatsApp). Em caso de instabilidade técnica comprovada ou queda global da plataforma de mensagens, o prazo regulamentar será suspenso, devendo o ALUNO utilizar o direct do Instagram da CONTRATADA como canal de contingência – instagram.com/cesaobigc.</p>
+<p><b>1.6 Comunicação do Aluno com o Professor:</b> É dever do ALUNO entrar em contato com o professor que prescreveu seu treinamento, no mínimo, 1 (uma) vez por semana, a fim de reportar como se deu aquele ciclo semanal de treinos, enviando vídeos dos exercícios, informando o rendimento físico, eventuais dificuldades, dúvidas e demais informações que julgue necessárias ou que tenham sido solicitadas, tudo para que haja uma boa comunicação entre aluno e professor e o serviço possa fluir da melhor forma possível. Baseado nessa interação, os treinos serão ajustados e atualizados a fim de que o ALUNO possa estar sempre evoluindo em busca da aprovação no TAF.</p>
+<p><b>1.7. Entrega do Material de Base:</b> após a confirmação do pagamento e em até 7 dias úteis, o ALUNO receberá o Manual de Preparação Pré-TAF, a fim de iniciar a sua preparação para o Teste de Aptidão Física através do desenvolvimento das capacidades básicas necessárias ao treinamento visando a aprovação no teste físico.</p>
+<p><b>1.8. Natureza do Material:</b> O referido Manual é um produto didático exclusivo com valor de mercado estipulado em R$ 197,00 (cento e noventa e sete reais).</p>
+<h4>2. DO PRAZO E DA ATIVAÇÃO DINÂMICA</h4>
+<p><b>2.1. Duração do Plano:</b> O plano contratado tem a duração de 3 (três), 6 (seis) ou 12 (doze) meses de acompanhamento ativo a partir da data de sua ativação.</p>
+<p><b>2.2. Prazo Limite para Início:</b> O ALUNO pode solicitar a ativação (início dos treinos) a qualquer momento, conforme o calendário do seu concurso, respeitando o prazo limite máximo e improrrogável até o dia 01/06/2027.</p>
+<p><b>2.3. Ativação Automática:</b> Caso o ALUNO não solicite formalmente o início do plano até 01/06/2027, o sistema realizará a ativação automática da consultoria nesta data, passando o prazo a fluir regularmente, independentemente de nova manifestação, preenchimento de anamnese ou do efetivo recebimento dos treinos por parte do ALUNO, haja vista a manutenção e a disponibilidade da vaga e do suporte técnico reservados ao aluno.</p>
+<h4>3. DA AUTORRESPONSABILIDADE DO ALUNO</h4>
+<p><b>3.1. Execução dos Treinos:</b> A consultoria garante a entrega da metodologia técnica e o suporte de excelência. Contudo, os resultados práticos dependem igualmente da disciplina, assiduidade e execução correta dos treinos por parte do ALUNO.</p>
+<p><b>3.2. Fatores Pessoais:</b> Perda de motivação, falta de tempo, desistência do concurso ou o não aproveitamento do material digital fornecido são de responsabilidade do ALUNO e não dão direito a descontos, abatimentos ou isenções financeiras.</p>
+<h4>4. REGRAS PARA CENÁRIOS ESPECÍFICOS DE CONCURSOS</h4>
+<p>Visando o equilíbrio e a boa-fé, aplicam-se as seguintes regras caso o cronograma do concurso público do ALUNO sofra alterações:</p>
+<p><b>4.1. Reprovação na Prova Objetiva/Discursiva:</b> Se o ALUNO for reprovado nas etapas teóricas antecedentes e ficar impedido de realizar o TAF pretendido, poderá solicitar o trancamento temporário do plano por até 6 (seis) meses. Esse saldo poderá ser utilizado na preparação para o TAF de qualquer outro concurso. Não haverá rescisão sem ônus por este motivo.</p>
+<p>4.2. Reprovação em qualquer etapa do concurso prévia ao Teste de Aptidão Física (TAF): Se o ALUNO for reprovado em qualquer etapa do concurso prévia ao Teste de Aptidão Física (TAF), tais como exame médico, exame psicológico, investigação social ou qualquer outra etapa anterior ao teste físico, poderá solicitar o trancamento temporário do plano por até 6 (seis) meses. Esse saldo poderá ser utilizado na preparação para o TAF de qualquer outro concurso. Não haverá rescisão sem ônus por este motivo.</p>
+<p><b>4.3. Adiamento Oficial do TAF:</b> Caso a banca organizadora adie a prova do TAF, independentemente do número de vezes que isto se fizer, a consultoria seguirá o fluxo normal de prestação de serviços com base na data de ativação escolhida pelo ALUNO. Fica à critério do aluno renovar o serviço da consultoria ou não a fim de que o mesmo siga até a nova data do TAF.</p>
+<p><b>4.4. Adiantamento do TAF:</b> se por qualquer razão o período contratado é menor do que o prazo até o TAF (iniciativa do próprio aluno, desatenção do aluno às datas, se o edital for publicado antes do previsto, se o cronograma divulgado prever o TAF com um prazo menor do que o plano contratado, dentre outras circunstâncias), a consultoria poderá ser ativada imediatamente, desde que solicitado pelo ALUNO. O saldo de tempo restante após a realização da prova não será reembolsado, mas ficará totalmente disponível para:</p>
+<p>a) Preparação física focada no Curso de Formação; ou</p>
+<p>b) Preparação física direcionada ao TAF de outro certame.</p>
+<p><b>4.5. Cancelamento ou Suspensão Indeterminada do Concurso:</b> Se o concurso for cancelado em definitivo ou suspenso por força maior antes do início da consultoria individualizada, o ALUNO poderá optar por:</p>
+<p>a) Transferir integralmente o crédito para a preparação de outro concurso; ou</p>
+<p>b) Solicitar o cancelamento com devolução dos valores pagos, deduzindo-se o percentual fixo de 10% (dez por cento) do valor total a título de taxa administrativa e remuneração pelo Manual de Base já entregue.</p>
+<p><b>4.6. Lesão/Enfermidade durante o treinamento:</b> Se o aluno sofrer alguma lesão de qualquer natureza, fruto ou não do treinamento, ou for acometido por qualquer enfermidade, aguda ou crônica, o plano seguirá o seu fluxo durante o período contratado, não sendo possível o trancamento ou adiamento do serviço contratado.</p>
+<h4>5. POLÍTICA DE DESISTÊNCIA E REEMBOLSO</h4>
+<p><b>5.1. Direito de Arrependimento Legal:</b> O ALUNO tem o prazo de 7 (sete) dias corridos, a contar da data de confirmação da compra, para desistir do plano com direito à restituição de 100% do valor pago, conforme o Art. 49 do Código de Defesa do Consumidor (CDC).</p>
+<p><b>5.2. Desistência Voluntária Após o Prazo Legal:</b> Passados os 7 dias, caso o ALUNO solicite o cancelamento por motivos pessoais, serão aplicadas as seguintes regras de retenção:</p>
+<p><b>a) Se a consultoria individualizada ainda NÃO foi ativada:</b> Será retido o valor estipulado do Manual de Base Pré-TAF (item 1.8), somado a uma multa compensatória de 10% (dez por cento) sobre o valor total do plano. O saldo restante será devolvido.</p>
+<p><b>b) Se a consultoria individualizada JÁ foi ativada:</b> Serão calculados os meses decorridos de serviço (cobrados pelo valor cheio da mensalidade, estipulado em R$ 250,00 (trezentos reais)/mês, sem o desconto promocional da Flex Friday). Sobre o saldo restante, aplica-se a multa de 10% (dez por cento), com a restituição do remanescente.</p>
+<h4>6. OPERACIONALIZAÇÃO DOS ESTORNOS</h4>
+<p>A devolução de valores seguirá estritamente a forma de pagamento utilizada no ato da compra:</p>
+<p><b>6.1. Compras via Cartão de Crédito:</b> O estorno será solicitado pela organização da campanha junto à plataforma intermediadora (Asaas). O crédito será lançado diretamente na fatura do ALUNO, ficando sujeito aos prazos e políticas da respectiva bandeira/operadora de cartão (podendo levar de 30 a 60 dias). Taxas de parcelamento cobradas pela plataforma intermediadora não são reembolsáveis.</p>
+<p><b>6.2. Compras via PIX:</b> O reembolso será realizado via transferência bancária (PIX) para a conta corrente de mesma titularidade do ALUNO, no prazo de até 5 (cinco) dias úteis após a formalização do cancelamento, sem custos adicionais de transação.</p>
+<h4>ANEXO I – TERMO DE RESPONSABILIDADE E DECLARAÇÃO DE SAÚDE</h4>
+<p>Eu, aluno devidamente identificado no preenchimento do formulário inicial (anamnese) e cadastramento de compra, no perfeito uso de minhas faculdades mentais e físicas, DECLARO para os devidos fins de direito que:</p>
+<p><b>Plena Aptidão Física:</b> Encontro-me em perfeitas condições físicas, clínicas e psicológicas para iniciar e dar continuidade ao programa de treinamento focado no Teste de Aptidão Física (TAF) prescrito pela TEAM BIGC CONSULTORIA ONLINE, assumindo total responsabilidade por minha integridade física.</p>
+<p><b>Inexistência de Impedimento Médico e Ciência dos Riscos:</b> Declaro expressamente que não possuo nenhuma recomendação, restrição ou impedimento médico que me impossibilite de praticar atividades físicas de alta intensidade e seguir as planilhas fornecidas, além de estar plenamente ciente de que o treinamento voltado para o TAF envolve exercícios intensos e simulados de esforço máximo, havendo o risco e a possibilidade de ocorrência de dores musculares, fadiga extrema, lesões ou qualquer intercorrência de saúde decorrente do esforço físico ou da execução incorreta dos treinos.</p>
+<p><b>Ciência do Regulamento da Campanha:</b> Li, conheço, aceito e submeto-me integralmente a todos os termos do Regulamento Oficial da campanha Flex Friday, incluindo os prazos de ativação, regras de suporte e a impossibilidade de trancamento por motivo de lesão ou enfermidade (conforme item 4.6 do regulamento).</p>
+<p><b>Uso de Imagem e Vídeos:</b> Autorizo, de forma gratuita e definitiva, o uso de minha imagem capturada em fotos ou vídeos enviados por mim através do canal de comunicação (WhatsApp) durante o suporte semanal (conforme item 1.6 do regulamento) para fins de divulgação, materiais didáticos, estudos de caso e publicidade em redes sociais pela TEAM BIGC CONSULTORIA ONLINE.</p>
+<p><b>Vinculação Eletrônica e Aceite Integral:</b> Compreendi perfeitamente e estou de acordo com todos os itens deste Termo de Responsabilidade. Declaro que o envio do meu formulário inicial (anamnese) ou a efetivação do pagamento do plano promocional constitui o meu aceite eletrônico definitivo e irrevogável a este documento.</p>
+      </div>
+    </details>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap fgrid">
+    <img src="img/teambigc.webp" alt="Team BigC" loading="lazy" width="600" height="415">
+    <div>CESAR E DANIELA CONSULTORIA ONLINE · CNPJ 57.483.376/0001-11<br>Rio de Janeiro/RJ · <a href="#" class="walink">WhatsApp</a> · <a href="#regulamento">Regulamento</a><br>© <span id="yr"></span> Team BigC · Método TAF: Treine Até Fazer</div>
+  </div>
+</footer>
+
+<a class="wa walink" href="#" aria-label="Falar no WhatsApp"><svg viewBox="0 0 32 32" fill="#fff"><path d="M16 3C9 3 3.3 8.6 3.3 15.6c0 2.4.7 4.7 1.9 6.7L3.2 29l6.9-1.8c1.9 1 4 1.6 6.2 1.6h0c7 0 12.7-5.7 12.7-12.6S23 3 16 3zm0 23.4c-1.9 0-3.8-.5-5.4-1.5l-.4-.2-4.1 1.1 1.1-4-.3-.4c-1.1-1.7-1.6-3.6-1.6-5.6C5.3 9.8 10.1 5.1 16 5.1c5.9 0 10.6 4.7 10.6 10.6 0 5.9-4.8 10.7-10.6 10.7zm5.8-8c-.3-.2-1.9-.9-2.2-1-.3-.1-.5-.2-.7.2-.2.3-.8 1-1 1.2-.2.2-.4.2-.7.1-.3-.2-1.3-.5-2.6-1.6-1-.9-1.6-1.9-1.8-2.2-.2-.3 0-.5.1-.7l.5-.6c.2-.2.2-.3.3-.5.1-.2 0-.4 0-.6-.1-.2-.7-1.7-1-2.3-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.6.1-.9.4-.3.3-1.2 1.1-1.2 2.7s1.2 3.1 1.3 3.4c.2.2 2.3 3.5 5.6 4.9.8.3 1.4.5 1.9.7.8.2 1.5.2 2.1.1.6-.1 1.9-.8 2.2-1.5.3-.7.3-1.4.2-1.5-.1-.2-.3-.3-.6-.4z"/></svg></a>
+
+<div class="mbar" id="mbar"><a href="#planos" class="btn btn-main">Garantir minha vaga</a></div>
+
+<script>
+(function(){
+  var F = window.FLEX;
+  var brl = function(v){ return v.toLocaleString("pt-BR",{minimumFractionDigits:2,maximumFractionDigits:2}); };
+  var para = {
+    sargento: "Bom pra quem já tem a data do TAF próxima (ou a previsão dela) e já está treinando. Ideal para refinar a preparação.",
+    major: "Ideal pra quem já tem algum treino na rotina e quer uma preparação de médio prazo, mas ainda é iniciante no mundo do TAF.",
+    general: "Para uma preparação de longo prazo: quem está começando a treinar ou saindo do sedentarismo ou de um longo período parado."
+  };
+  var g = document.getElementById("pgrid");
+  F.planos.forEach(function(p){
+    var off = Math.round((1 - p.por/p.de)*100);
+    var d = document.createElement("div");
+    d.className = "plan reveal" + (p.destaque ? " top" : "");
+    d.innerHTML =
+      (p.destaque ? '<div class="badge">Recomendado</div>' : '') +
+      '<div class="pname">' + p.nome + '</div>' +
+      '<div class="dur">' + p.meses + ' meses de consultoria</div>' +
+      '<span class="off">' + off + '% OFF</span>' +
+      '<div class="from">De <s>R$ ' + brl(p.de) + '</s> por</div>' +
+      '<div class="price"><small>R$</small>' + brl(p.por) + '</div>' +
+      '<div class="inst">ou 3x de R$ ' + brl(p.por/3) + ' sem juros</div>' +
+      '<div class="for"><div class="bonus">🎁 + Manual de Preparação Pré-TAF <s>R$ 197</s></div>' + (para[p.id]||"") + '</div>' +
+      '<a class="btn btn-main" href="' + p.link3x + '" target="_blank" rel="noopener">Garantir minha vaga</a>' +
+      '<a class="alt" href="' + p.link10x + '" target="_blank" rel="noopener">Prefere em até 10x? Clique aqui</a>';
+    g.appendChild(d);
+  });
+
+  document.getElementById("pixKey").textContent = F.pix.chave;
+  document.getElementById("pixName").textContent = F.pix.nome;
+  document.getElementById("copyPix").addEventListener("click", function(){
+    var b = this, k = F.pix.chave.replace(/\D/g,"");
+    var done = function(){ b.textContent = "Copiada ✓"; setTimeout(function(){ b.textContent = "Copiar chave"; }, 2000); };
+    if (navigator.clipboard) navigator.clipboard.writeText(k).then(done, function(){ prompt("Copie a chave:", k); });
+    else prompt("Copie a chave:", k);
+  });
+
+  var wa = "https://wa.me/" + F.whatsapp + "?text=" + encodeURIComponent(F.whatsappMsg);
+  document.querySelectorAll(".walink").forEach(function(a){ a.href = wa; a.target = "_blank"; a.rel = "noopener"; });
+  document.getElementById("yr").textContent = new Date().getFullYear();
+
+  // contador
+  document.getElementById("ribbonTxt").textContent = F.textoPrazo;
+  if (F.prazo) {
+    var end = new Date(F.prazo).getTime(), cd = document.getElementById("cd");
+    cd.hidden = false;
+    var tick = function(){
+      var s = Math.max(0, Math.floor((end - Date.now())/1000));
+      if (s === 0) { document.getElementById("ribbonTxt").textContent = "Oferta encerrada"; cd.hidden = true; return; }
+      var dd = Math.floor(s/86400), hh = Math.floor(s%86400/3600), mm = Math.floor(s%3600/60), ss = s%60;
+      var z = function(n){ return (n<10?"0":"") + n; };
+      cd.textContent = (dd ? dd + "d " : "") + z(hh) + ":" + z(mm) + ":" + z(ss);
+      setTimeout(tick, 1000);
+    };
+    tick();
+  }
+
+  // animações
+  var io = "IntersectionObserver" in window ? new IntersectionObserver(function(es){
+    es.forEach(function(e){ if (e.isIntersecting){ e.target.classList.add("in"); io.unobserve(e.target); } });
+  }, {threshold:.12}) : null;
+  document.querySelectorAll(".reveal").forEach(function(el){ io ? io.observe(el) : el.classList.add("in"); });
+
+  // barra fixa no celular
+  var mbar = document.getElementById("mbar"), plans = document.getElementById("planos");
+  var onScroll = function(){
+    var r = plans.getBoundingClientRect();
+    var inPlans = r.top < innerHeight && r.bottom > 0;
+    mbar.classList.toggle("show", scrollY > innerHeight*0.8 && !inPlans);
+  };
+  addEventListener("scroll", onScroll, {passive:true}); onScroll();
+})();
+</script>
+</body>
+</html>
